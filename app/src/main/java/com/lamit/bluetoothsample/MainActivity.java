@@ -1,3 +1,5 @@
+package com.lamit.bluetoothsample;
+
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -9,9 +11,6 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.EditText;
 import android.widget.Button;
-
-import com.lamit.bluetoothsample.R;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -21,7 +20,6 @@ import java.util.UUID;
 public class MainActivity extends Activity
 {
     TextView myLabel;
-    EditText myTextbox;
     BluetoothAdapter mBluetoothAdapter;
     BluetoothSocket mmSocket;
     BluetoothDevice mmDevice;
@@ -40,10 +38,8 @@ public class MainActivity extends Activity
         setContentView(R.layout.activity_main);
 
         Button openButton = (Button)findViewById(R.id.open);
-        Button sendButton = (Button)findViewById(R.id.send);
         Button closeButton = (Button)findViewById(R.id.close);
         myLabel = (TextView)findViewById(R.id.label);
-        myTextbox = (EditText)findViewById(R.id.entry);
 
         //Open Button
         openButton.setOnClickListener(new View.OnClickListener()
