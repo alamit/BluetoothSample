@@ -75,6 +75,7 @@ public class MainActivity extends Activity
         if(mBluetoothAdapter == null)
         {
             myLabel.setText("No bluetooth adapter available");
+            return;
         }
 
         if(!mBluetoothAdapter.isEnabled())
