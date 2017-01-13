@@ -149,6 +149,5 @@ public class MainActivity extends Activity {
         mmOutputStream.close();
         mmInputStream.close();
         mmSocket.close();
-        myLabel.setText("Bluetooth Closed");
     }
 }
