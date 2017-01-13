@@ -99,8 +99,6 @@ public class MainActivity extends Activity {
         mmInputStream = mmSocket.getInputStream();
 
         beginListenForData();
-
-        myLabel.setText("Bluetooth Opened");
     }
 
     void beginListenForData() {
